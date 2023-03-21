@@ -41,4 +41,4 @@ export GST_PLUGIN_PATH=/opt/gst-kaldi-nnet2-online/src/:/opt/kaldi/src/gst-plugi
 
 python /opt/kaldi-gstreamer-server/kaldigstserver/worker.py -c $YAML -u ws://$MASTER:$PORT/worker/ws/speech 2>> /opt/worker.log &
 
-while true; do echo 'ASR running'; sleep 30; done
+echo 'ASR running';
